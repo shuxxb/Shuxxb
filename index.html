@@ -5,11 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+
+    @font-face {
+      font-family: 'H5H';
+      src: url('H5H.otf') format('opentype');
+    }
+
     body {
       margin: 0;
       background: #000;
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'H5H', sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -19,17 +25,18 @@
     }
 
     img {
-      width: 260px;
-      margin-bottom: 40px;
+      width: 280px;
+      margin-bottom: 50px;
     }
 
     .links a {
       display: block;
       text-decoration: none;
       color: white;
-      margin: 10px 0;
-      letter-spacing: 2px;
-      font-size: 14px;
+      margin: 14px 0;
+      letter-spacing: 3px;
+      font-size: 15px;
+      transition: 0.3s;
     }
 
     .links a:hover {
@@ -37,26 +44,33 @@
     }
 
     .contact {
-      margin-top: 30px;
-      font-size: 12px;
-      color: gray;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #777;
       letter-spacing: 1px;
     }
+
   </style>
 </head>
 
 <body>
 
-  <img src="your-logo.png" alt="Shu Logo">
+  <!-- Logo -->
+  <img src="logo.png" alt="Shu Logo">
 
+  <!-- Links -->
   <div class="links">
-    <a href="https://instagram.com/yourusername" target="_blank">INSTAGRAM</a>
-    <a href="https://youtube.com/@yourchannel" target="_blank">YOUTUBE</a>
-    <a href="https://open.spotify.com/artist/yourlink" target="_blank">SPOTIFY</a>
+    <a href="https://www.instagram.com/ishuaiib?igsh=MWQ4dHJ2d2l6NnRkaQ%3D%3D&utm_source=qr" target="_blank">INSTAGRAM</a>
+    <a href="https://youtube.com/@sxhuu?si=DlS9Pkp3DtqGR2c6" target="_blank">YOUTUBE</a>
+    <a href="https://open.spotify.com/artist/7FGgtpGjJfdPkF4qRaiVL5?si=4VfyDyFjTISMVIH3OAtUbA" target="_blank">SPOTIFY</a>
+    <a href="https://music.apple.com/in/artist/shu/1820942288" target="_blank">APPLE MUSIC</a>
   </div>
 
+  <!-- Contact -->
   <div class="contact">
-    bookings@yourmail.com
+    <a href="mailto:shuxxb@gmail.com" style="color:#777; text-decoration:none;">
+      shuxxb@gmail.com
+    </a>
   </div>
 
 </body>
