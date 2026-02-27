@@ -5,30 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    @font-face {
-      font-family: 'Bassun';
-      src: url('Bassunpersonaluse.otf') format('opentype');
-    }
-
     body {
       margin: 0;
       background: #000;
+      color: white;
+      font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      text-align: center;
     }
 
-    h1 {
-      font-family: 'Bassun';
-      font-size: 120px;
+    img {
+      width: 260px;
+      margin-bottom: 40px;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
       color: white;
-      margin: 0;
+      margin: 10px 0;
+      letter-spacing: 2px;
+      font-size: 14px;
+    }
+
+    .links a:hover {
+      opacity: 0.6;
+    }
+
+    .contact {
+      margin-top: 30px;
+      font-size: 12px;
+      color: gray;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 
 <body>
-  <h1>shu</h1>
+
+  <img src="your-logo.png" alt="Shu Logo">
+
+  <div class="links">
+    <a href="https://instagram.com/yourusername" target="_blank">INSTAGRAM</a>
+    <a href="https://youtube.com/@yourchannel" target="_blank">YOUTUBE</a>
+    <a href="https://open.spotify.com/artist/yourlink" target="_blank">SPOTIFY</a>
+  </div>
+
+  <div class="contact">
+    bookings@yourmail.com
+  </div>
+
 </body>
 </html>
