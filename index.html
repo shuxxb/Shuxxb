@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 html { scroll-behavior: smooth; }
 
 * {
@@ -21,7 +20,6 @@ html { scroll-behavior: smooth; }
 body {
   background: #0b0b0f;
   color: white;
-  overflow-x: hidden;
 }
 
 /* NAV */
@@ -32,28 +30,19 @@ nav {
   padding: 20px 10%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   backdrop-filter: blur(12px);
   background: rgba(15,15,20,0.6);
-  z-index: 1000;
-}
-
-nav h2 {
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 
 nav a {
   text-decoration: none;
   color: #aaa;
   margin-left: 25px;
-  transition: 0.3s;
   font-size: 14px;
+  transition: 0.3s;
 }
 
-nav a:hover {
-  color: white;
-}
+nav a:hover { color: white; }
 
 /* HERO */
 
@@ -63,7 +52,6 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .hero h1 {
@@ -78,80 +66,75 @@ nav a:hover {
   color: #aaa;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 section {
   padding: 120px 10%;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-section.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 section h2 {
-  font-size: 26px;
-  margin-bottom: 40px;
   text-align: center;
+  margin-bottom: 40px;
   letter-spacing: 2px;
 }
-
-/* CARD */
 
 .card {
   background: rgba(255,255,255,0.04);
   padding: 40px;
   border-radius: 20px;
-  backdrop-filter: blur(15px);
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
   text-align: center;
+}
+
+/* RELEASE GRID */
+
+.release-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 25px;
+}
+
+.release-grid img {
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.release-grid img:hover {
+  transform: scale(1.05);
 }
 
 /* BUTTON */
 
 .btn {
   display: inline-block;
-  margin: 10px 0;
+  margin-top: 25px;
   padding: 12px 28px;
   border-radius: 30px;
   text-decoration: none;
   background: white;
   color: black;
   font-weight: 500;
-  transition: all 0.4s ease;
+  transition: 0.4s;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
 }
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-}
-
-/* FOOTER */
 
 footer {
   padding: 50px;
   text-align: center;
   color: #777;
-  font-size: 14px;
 }
-
 </style>
 </head>
 
 <body>
 
 <nav>
-  <h2>Shu</h2>
+  <div>Shu</div>
   <div>
     <a href="#about">About</a>
     <a href="#music">Music</a>
@@ -159,67 +142,69 @@ footer {
   </div>
 </nav>
 
+<!-- HERO -->
+
 <div class="hero">
   <h1>Shu</h1>
   <p>MUSIC PRODUCER</p>
 </div>
 
+<!-- ABOUT -->
+
 <section id="about">
   <h2>ABOUT</h2>
   <div class="card">
+    <!-- EDIT BIO BELOW -->
     <p>
       Shu is a music producer focused on modern sound design and
-      emotion-driven production. Each project is built with clarity,
-      structure and intention.
+      emotion-driven production.
     </p>
   </div>
 </section>
+
+<!-- MUSIC -->
 
 <section id="music">
-  <h2>MUSIC</h2>
-  <div class="card">
-    <p style="color:#aaa; margin-bottom:20px;">
-      Listen on your preferred platform:
-    </p>
+  <h2>RELEASES</h2>
 
-    <a href="https://music.apple.com/in/artist/shu/1820942288" target="_blank" class="btn">Apple Music</a><br>
-    <a href="https://open.spotify.com/artist/7FGgtpGjJfdPkF4qRaiVL5?si=q6Z866XlT_upvBhjEC1YPg" target="_blank" class="btn">Spotify</a><br>
-    <a href="https://youtube.com/@sxhuu?si=WzWaxwCNAxZWH05j" target="_blank" class="btn btn-outline">YouTube</a><br>
-    <a href="https://on.soundcloud.com/ESKNOcpJa415xnKD61" target="_blank" class="btn">SoundCloud</a><br>
-    <a href="https://shumusic6.bandcamp.com/" target="_blank" class="btn">Bandcamp</a><br>
-    <a href="https://www.instagram.com/ishuaiib?igsh=MWQ4dHJ2d2l6NnRkaQ%3D%3D&utm_source=qr" target="_blank" class="btn btn-outline">Instagram</a>
+  <div class="release-grid">
+
+    <!-- RELEASE 1 -->
+    <a href="PASTE_LINK_HERE" target="_blank">
+      <img src="cover1.jpg" alt="Release 1">
+    </a>
+
+    <!-- RELEASE 2 -->
+    <a href="PASTE_LINK_HERE" target="_blank">
+      <img src="cover2.jpg" alt="Release 2">
+    </a>
+
+    <!-- RELEASE 3 -->
+    <a href="PASTE_LINK_HERE" target="_blank">
+      <img src="cover3.jpg" alt="Release 3">
+    </a>
+
   </div>
+
 </section>
+
+<!-- CONTACT -->
 
 <section id="contact">
   <h2>CONTACT</h2>
   <div class="card">
-    <p>For collaborations or professional inquiries:</p>
-    <p style="margin-top:20px; font-weight:500;">your@email.com</p>
+
+    <!-- EDIT EMAIL BELOW -->
+    <p>your@email.com</p>
+
     <a href="mailto:your@email.com" class="btn">Send Email</a>
+
   </div>
 </section>
 
 <footer>
   © 2026 Shu. All rights reserved.
 </footer>
-
-<script>
-
-/* Smooth Section Reveal */
-
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-  sections.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100){
-      sec.classList.add("show");
-    }
-  });
-});
-
-</script>
 
 </body>
 </html>
