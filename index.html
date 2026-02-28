@@ -3,15 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shuxxb</title>
+<title>Shu | Music Producer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 * {
   margin: 0;
@@ -26,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* NAV */
 
 nav {
   position: fixed;
@@ -35,7 +33,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   background: rgba(15,15,20,0.6);
   z-index: 1000;
 }
@@ -50,6 +48,7 @@ nav a {
   color: #aaa;
   margin-left: 25px;
   transition: 0.3s;
+  font-size: 14px;
 }
 
 nav a:hover {
@@ -65,48 +64,27 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
 }
 
 .hero h1 {
-  font-size: 60px;
-  font-weight: 700;
-  background: linear-gradient(90deg,#fff,#aaa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fadeUp 1.2s ease forwards;
+  font-size: 52px;
+  letter-spacing: 4px;
 }
 
 .hero p {
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 15px;
+  font-size: 14px;
+  letter-spacing: 4px;
   color: #aaa;
-  animation: fadeUp 1.8s ease forwards;
 }
 
-.btn {
-  margin-top: 40px;
-  padding: 14px 40px;
-  border-radius: 40px;
-  text-decoration: none;
-  background: white;
-  color: black;
-  font-weight: 500;
-  transition: 0.3s;
-  animation: fadeUp 2.2s ease forwards;
-}
-
-.btn:hover {
-  background: #ddd;
-}
-
-/* SECTIONS */
+/* SECTION */
 
 section {
   padding: 120px 10%;
   opacity: 0;
   transform: translateY(40px);
-  transition: 1s ease;
+  transition: all 0.8s ease;
 }
 
 section.show {
@@ -115,21 +93,47 @@ section.show {
 }
 
 section h2 {
-  font-size: 36px;
+  font-size: 26px;
   margin-bottom: 40px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 /* CARD */
 
 .card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.04);
   padding: 40px;
   border-radius: 20px;
   backdrop-filter: blur(15px);
-  text-align: center;
   max-width: 700px;
   margin: auto;
+  text-align: center;
+}
+
+/* BUTTON */
+
+.btn {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  background: white;
+  color: black;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
 /* FOOTER */
@@ -138,19 +142,7 @@ footer {
   padding: 50px;
   text-align: center;
   color: #777;
-}
-
-/* ANIMATION */
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-size: 14px;
 }
 
 </style>
@@ -159,7 +151,7 @@ footer {
 <body>
 
 <nav>
-  <h2>SHUXXB</h2>
+  <h2>Shu</h2>
   <div>
     <a href="#about">About</a>
     <a href="#music">Music</a>
@@ -168,45 +160,53 @@ footer {
 </nav>
 
 <div class="hero">
-  <h1>Sound. Emotion. Identity.</h1>
-  <p>Independent Artist Crafting Modern Energy</p>
-  <a href="#music" class="btn">Explore Music</a>
+  <h1>Shu</h1>
+  <p>MUSIC PRODUCER</p>
 </div>
 
 <section id="about">
-  <h2>About</h2>
+  <h2>ABOUT</h2>
   <div class="card">
     <p>
-      Professional bio about your music journey. Keep it minimal, strong and clean.
+      Shu is a music producer focused on modern sound design and
+      emotion-driven production. Each project is built with clarity,
+      structure and intention.
     </p>
   </div>
 </section>
 
 <section id="music">
-  <h2>Latest Release</h2>
+  <h2>MUSIC</h2>
   <div class="card">
-    <iframe style="border-radius:12px" 
-      src="https://open.spotify.com/embed/artist/7FGgtpGjJfdPk"
-      width="100%" height="380" frameBorder="0"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-    </iframe>
+    <p style="color:#aaa; margin-bottom:20px;">
+      Listen on your preferred platform:
+    </p>
+
+    <a href="https://music.apple.com/in/artist/shu/1820942288" target="_blank" class="btn">Apple Music</a><br>
+    <a href="https://open.spotify.com/artist/7FGgtpGjJfdPkF4qRaiVL5?si=q6Z866XlT_upvBhjEC1YPg" target="_blank" class="btn">Spotify</a><br>
+    <a href="https://youtube.com/@sxhuu?si=WzWaxwCNAxZWH05j" target="_blank" class="btn btn-outline">YouTube</a><br>
+    <a href="https://on.soundcloud.com/ESKNOcpJa415xnKD61" target="_blank" class="btn">SoundCloud</a><br>
+    <a href="https://shumusic6.bandcamp.com/" target="_blank" class="btn">Bandcamp</a><br>
+    <a href="https://www.instagram.com/ishuaiib?igsh=MWQ4dHJ2d2l6NnRkaQ%3D%3D&utm_source=qr" target="_blank" class="btn btn-outline">Instagram</a>
   </div>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
+  <h2>CONTACT</h2>
   <div class="card">
-    <p>Email: your@email.com</p>
+    <p>For collaborations or professional inquiries:</p>
+    <p style="margin-top:20px; font-weight:500;">your@email.com</p>
+    <a href="mailto:your@email.com" class="btn">Send Email</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Shuxxb. All rights reserved.
+  © 2026 Shu. All rights reserved.
 </footer>
 
 <script>
 
-/* Scroll Reveal Effect */
+/* Smooth Section Reveal */
 
 const sections = document.querySelectorAll("section");
 
