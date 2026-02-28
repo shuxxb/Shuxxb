@@ -1,77 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Shu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shuxxb</title>
 
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
-    @font-face {
-      font-family: 'H5H';
-      src: url('H5H.otf') format('opentype');
-    }
+<style>
 
-    body {
-      margin: 0;
-      background: #000;
-      color: white;
-      font-family: 'H5H', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    img {
-      width: 280px;
-      margin-bottom: 50px;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-    .links a {
-      display: block;
-      text-decoration: none;
-      color: white;
-      margin: 14px 0;
-      letter-spacing: 3px;
-      font-size: 15px;
-      transition: 0.3s;
-    }
+body {
+  background: #0b0b0f;
+  color: white;
+  overflow-x: hidden;
+}
 
-    .links a:hover {
-      opacity: 0.6;
-    }
+/* NAVBAR */
 
-    .contact {
-      margin-top: 40px;
-      font-size: 13px;
-      color: #777;
-      letter-spacing: 1px;
-    }
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(15,15,20,0.6);
+  z-index: 1000;
+}
 
-  </style>
+nav h2 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-left: 25px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background: linear-gradient(90deg,#fff,#aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #aaa;
+  animation: fadeUp 1.8s ease forwards;
+}
+
+.btn {
+  margin-top: 40px;
+  padding: 14px 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  background: white;
+  color: black;
+  font-weight: 500;
+  transition: 0.3s;
+  animation: fadeUp 2.2s ease forwards;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 120px 10%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* CARD */
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 50px;
+  text-align: center;
+  color: #777;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- Logo -->
-  <img src="logo.png" alt="Shu Logo">
-
-  <!-- Links -->
-  <div class="links">
-    <a href="https://www.instagram.com/ishuaiib?igsh=MWQ4dHJ2d2l6NnRkaQ%3D%3D&utm_source=qr" target="_blank">INSTAGRAM</a>
-    <a href="https://youtube.com/@sxhuu?si=DlS9Pkp3DtqGR2c6" target="_blank">YOUTUBE</a>
-    <a href="https://open.spotify.com/artist/7FGgtpGjJfdPkF4qRaiVL5?si=4VfyDyFjTISMVIH3OAtUbA" target="_blank">SPOTIFY</a>
-    <a href="https://music.apple.com/in/artist/shu/1820942288" target="_blank">APPLE MUSIC</a>
+<nav>
+  <h2>SHUXXB</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
   </div>
+</nav>
 
-  <!-- Contact -->
-  <div class="contact">
-    <a href="mailto:shuxxb@gmail.com" style="color:#777; text-decoration:none;">
-      shuxxb@gmail.com
-    </a>
+<div class="hero">
+  <h1>Sound. Emotion. Identity.</h1>
+  <p>Independent Artist Crafting Modern Energy</p>
+  <a href="#music" class="btn">Explore Music</a>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="card">
+    <p>
+      Professional bio about your music journey. Keep it minimal, strong and clean.
+    </p>
   </div>
+</section>
+
+<section id="music">
+  <h2>Latest Release</h2>
+  <div class="card">
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/artist/7FGgtpGjJfdPk"
+      width="100%" height="380" frameBorder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: your@email.com</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Shuxxb. All rights reserved.
+</footer>
+
+<script>
+
+/* Scroll Reveal Effect */
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      sec.classList.add("show");
+    }
+  });
+});
+
+</script>
 
 </body>
 </html>
