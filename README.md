@@ -1,16 +1,28 @@
-## Hi there 👋
+## Hi there 👋 I'm Shu
 
-<!--
-**shuxxb/Shuxxb** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎧 Music Producer | Sound Explorer  
 
-Here are some ideas to get you started:
+- 🔭 Currently working on: Trap / Ambient / Experimental beats  
+- 👯 Looking to collaborate with: Artists, vocalists, and producers  
+- 💬 Ask me about: Beat making, music production, and sound ideas  
+ 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🎵 My Work
+- Instrumenta
+- Experimental sound design
+
+---
+
+### 🌐 Connect With Me
+- Instagram: [https://www.instagram.com/ishuuaib?igsh=eWcxdGRjOXpwb2Nw&utm_source=qr]
+- YouTube: [https://youtube.com/@beatbyshu?si=9wdyn9tS5di9ZETx]
+- Spotify: [https://open.spotify.com/artist/7FGgtpGjJfdPkF4qRaiVL5?si=QnDtGS_fTGmVlA03Oa8gHQ]
+
+---
+
+### ⚡ Tools I Use
+- Cubase 
+- FL Studio  
+- Waves Plugins  
